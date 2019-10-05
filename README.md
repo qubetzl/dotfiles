@@ -1,14 +1,15 @@
 # Installation steps
 
 `git clone git@gogs.lan:qubetzl/dotfiles.git dotfiles`
+
 `~/dotfiles/setup.sh`
 
 # Resources
-Guides
+### Guides
 - [thoughtbot](https://thoughtbot.com/upcase/videos/intro-to-dotfiles)
 - [GitHub](https://dotfiles.github.io/)
------------
-Inspirations
+
+### Inspirations
 - [Chris Toomey](https://github.com/christoomey/dotfiles)
 - [thoughtbot](https://github.com/thoughtbot/dotfiles)
 - [Ryanb](https://github.com/ryanb/dotfiles)
