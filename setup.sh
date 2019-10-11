@@ -3,8 +3,7 @@ set -e
 set -u
 
 function setup_vim_plug() {
-    local autoload_file="~/.vim/autoload/plug.vim"
-    curl -fLo "${autoload_file}" --create-dirs \
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 }
 
