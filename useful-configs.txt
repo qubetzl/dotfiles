@@ -1,0 +1,2 @@
+.config/kxkbrc - Keyboard layout
+.config/ktimezonedrc - Timezone?
