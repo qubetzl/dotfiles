@@ -1,2 +1,3 @@
 .config/kxkbrc - Keyboard layout
+.local/share/kded5/keyboard/session/layout_memory.xml - Keyboard layout "memory"
 .config/ktimezonedrc - Timezone?
