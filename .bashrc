@@ -1,16 +1,15 @@
-# .bashrc
+#!/usr/bin/env bash
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
+EDITOR=vim
 
-# User specific aliases and functions
-CUSTOM_BASH_PROFILE=~/scripts/qubetzl-profile.sh
-if [ -f ${CUSTOM_BASH_PROFILE} ]; then
-	source ${CUSTOM_BASH_PROFILE}
-fi
-unset CUSTOM_BASH_PROFILE
+#powerline statusline plugin
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+repository_root="/usr/share"
+. ${repository_root}/powerline/bindings/bash/powerline.sh
