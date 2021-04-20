@@ -31,6 +31,7 @@ function link_dotfiles() {
     
     # Bash
     check_and_link ~/dotfiles/.bashrc ~/.bashrc
+    check_and_link ~/dotfiles/.profile ~/.profile
     
     # PAM
     check_and_link ~/dotfiles/.pam_environment ~/.pam_environment
