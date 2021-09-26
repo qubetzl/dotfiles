@@ -5,7 +5,7 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-EDITOR=vim
+export EDITOR=vim
 
 # Aliases
 alias ll='ls -lh --color=auto'
