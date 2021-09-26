@@ -19,6 +19,3 @@ fi
 # Subracting from 666 for files and 777 for directories
 umask 0002
 
-alias ll='ls -lh --color=auto'
-#ksuperkey -e 'Super_L=Alt_L|F1'
-

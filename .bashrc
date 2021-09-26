@@ -7,6 +7,12 @@ fi
 
 EDITOR=vim
 
+# Aliases
+alias ll='ls -lh --color=auto'
+
+# Workaround for meta not opening the Application Luncher in Plasma
+#ksuperkey -e 'Super_L=Alt_L|F1'
+
 #powerline statusline plugin
 powerline-daemon -q
 POWERLINE_BASH_CONTINUATION=1
