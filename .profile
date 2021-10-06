@@ -4,12 +4,12 @@
 dotfilesDir="$HOME/dotfiles"
 
 if [ -d "${dotfilesDir}" ] ; then
-    for dotfileSource in "$dotfilesDir"/profile.d/*.sh; do
-        if [ -r "${dotfileSource}" ]; then
-            source "${dotfileSource}"
+    for profileFragment in "$dotfilesDir"/profile.d/*.sh; do
+        if [ -r "${profileFragment}" ]; then
+            source "${profileFragment}"
         fi
     done
-    unset dotfileSource
+    unset profileFragment
 fi
 
 unset dotfilesDir
