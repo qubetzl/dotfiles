@@ -1,21 +1,15 @@
 #!/usr/bin/env bash
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+# Source all .sh scripts in profile.d
+dotfilesDir="$HOME/dotfiles"
+
+if [ -d "${dotfilesDir}" ] ; then
+    for bashrcFragment in "$dotfilesDir"/bashrc.d/*.sh; do
+        if [ -r "${bashrcFragment}" ]; then
+            source "${bashrcFragment}"
+        fi
+    done
+    unset bashrcFragment
 fi
 
-export EDITOR=vim
-
-# Aliases
-alias ll='ls -lh --color=auto'
-
-# Workaround for meta not opening the Application Luncher in Plasma
-#ksuperkey -e 'Super_L=Alt_L|F1'
-
-#powerline statusline plugin
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-repository_root="/usr/share"
-. ${repository_root}/powerline/bindings/bash/powerline.sh
+unset dotfilesDir
