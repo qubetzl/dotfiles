@@ -3,6 +3,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-plug'
 "Plug 'junegunn/seoul256.vim'
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 :set background&
