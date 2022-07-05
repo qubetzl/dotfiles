@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Source all .sh scripts in profile.d
+# Source all .sh scripts in bashrc.d
 dotfilesDir="$HOME/dotfiles"
 
 if [ -d "${dotfilesDir}" ] ; then
