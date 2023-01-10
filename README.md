@@ -16,3 +16,4 @@
 - [Gary Bernhardt](https://github.com/garybernhardt/dotfiles)
 - [Rtomayko](https://github.com/rtomayko/dotfiles)
 - [Tianon](https://github.com/tianon/home)
+- [Bjorn Neergaard](https://github.com/neersighted/dotfiles)
