@@ -8,5 +8,5 @@
 - link:
     ~/.bashrc: .bashrc
     ~/.profile: .profile
-    ~/.vimrc: vim/.vimrc
+    ~/.vim/pack: vim/pack
     ~/.ssh/config: .ssh/config

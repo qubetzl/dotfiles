@@ -1,3 +1,15 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = git@github.com:anishathalye/dotbot.git
+[submodule "vim/pack/community/start/vim-airline"]
+	path = vim/pack/community/start/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "vim/pack/community/start/vim-airline-themes"]
+	path = vim/pack/community/start/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "vim/pack/community/start/syntastic"]
+	path = vim/pack/community/start/syntastic
+	url = git@github.com:vim-syntastic/syntastic.git
+[submodule "vim/pack/community/start/palenight.vim"]
+	path = vim/pack/community/start/palenight.vim
+	url = git@github.com:drewtempelmeyer/palenight.vim.git
