@@ -6,7 +6,7 @@
 - clean: ["~"]
 
 - link:
-    ~/.bashrc: .bashrc
-    ~/.profile: .profile
+    ~/.bashrc: bashrc
+    ~/.profile: profile
     ~/.vim/pack: vim/pack
-    ~/.ssh/config: .ssh/config
+    ~/.ssh/config: ssh/config
