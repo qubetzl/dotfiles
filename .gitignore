@@ -1,8 +1,4 @@
 **/.directory
-vim/.vim/autoload/plug.vim
-vim/.vim/.netrwhist
-vim/.vim/plugged
-vim/.vim/sessions
 
 # Local configuration
 **.local
