@@ -1,0 +1,12 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.bashrc: .bashrc
+    ~/.profile: .profile
+    ~/.vimrc: vim/.vimrc
+    ~/.ssh/config: .ssh/config
