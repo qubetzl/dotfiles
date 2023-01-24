@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-# Source all .sh scripts in bashrc.d
+# Source all .sh scripts in bashrc.d and bashrc.local.d
 dotfilesDir="$HOME/dotfiles"
 
 if [ -d "${dotfilesDir}" ] ; then
-    for bashrcFragment in "$dotfilesDir"/bashrc.d/*.sh; do
-        if [ -r "${bashrcFragment}" ]; then
-            source "${bashrcFragment}"
+    for fragment in "$dotfilesDir"/bashrc{.d,.local.d}/*.sh; do
+        if [ -r "${fragment}" ]; then
+            . "${fragment}"
         fi
     done
-    unset bashrcFragment
+    unset fragment
 fi
 
 unset dotfilesDir

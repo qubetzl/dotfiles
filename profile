@@ -1,15 +1,15 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-# Source all .sh scripts in profile.d
+# Source all .sh scripts in profile.d and profile.local.d
 dotfilesDir="$HOME/dotfiles"
 
-if [ -d "${dotfilesDir}" ] ; then
-    for profileFragment in "$dotfilesDir"/profile.d/*.sh; do
-        if [ -r "${profileFragment}" ]; then
-            source "${profileFragment}"
+if [ -d "$dotfilesDir" ] ; then
+    for fragment in "$dotfilesDir"/profile.d/*.sh "$dotfilesDir"/profile.local.d/*.sh; do
+        if [ -r "$fragment" ]; then
+            . "$fragment"
         fi
     done
-    unset profileFragment
+    unset fragment
 fi
 
 unset dotfilesDir
