@@ -17,3 +17,4 @@
       force: true
     ~/.vim/pack: vim/pack
     ~/.ssh/config: ssh/config
+    ~/.ssh/config.d: ssh/config.d
