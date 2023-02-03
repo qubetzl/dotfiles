@@ -6,4 +6,6 @@ elif command -v powerline-daemon &> /dev/null; then
     POWERLINE_BASH_SELECT=1
     repository_root="/usr/share"
     . ${repository_root}/powerline/bindings/bash/powerline.sh
+else
+    PS1='\[\033[01;34m\]\w\[\033[00m\]\$ '
 fi
