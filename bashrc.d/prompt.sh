@@ -1,5 +1,6 @@
-#powerline statusline plugin
-if command -v powerline-daemon &> /dev/null; then
+if command -v starship &> /dev/null; then
+    eval "$(starship init bash)"
+elif command -v powerline-daemon &> /dev/null; then
     powerline-daemon -q
     POWERLINE_BASH_CONTINUATION=1
     POWERLINE_BASH_SELECT=1
