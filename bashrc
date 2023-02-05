@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+# If not running interactively, don't do anything
+# This prevents ~/.bashrc from running, when sourced from ~/.profile in a
+# non-interactive session
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 # Source all .sh scripts in bashrc.d and bashrc.local.d
 dotfilesDir="$HOME/dotfiles"
 

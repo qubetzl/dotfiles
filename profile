@@ -13,3 +13,12 @@ if [ -d "$dotfilesDir" ] ; then
 fi
 
 unset dotfilesDir
+
+# Source ~/.bashrc running Bash and it exists
+if [ -n "$BASH_VERSION" ] && [ -f "$HOME/.bashrc" ]; then
+    # This is how ~/.profile and ~/.bashrc sourcing is setup by convention
+    # (and historically). Examples for historic use are avaiable under
+    # /usr/share/doc/bash/examples/startup-files privided by the `bash-doc`
+    # package.
+    . "$HOME/.bashrc"
+fi
