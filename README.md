@@ -1,7 +1,7 @@
 # Installation steps
 
 ```
-git clone git@github.com:qubetzl/dotfiles.git && cd dotfiles && ./install
+git clone https://github.com/qubetzl/dotfiles.git && cd dotfiles && ./install
 ```
 
 # Resources
